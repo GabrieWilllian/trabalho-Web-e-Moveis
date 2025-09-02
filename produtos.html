@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+        }
+
+        body {
+            margin: 0;
+            background-color: #F5F5F7;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #000000;
+        }
+
+        .menu {
+            grid-column-start: 6;
+            grid-column-end: 12;
+            justify-content: center;
+            /*centraliza o menu*/
+            gap: 20px;
+        }
+
+        .imagem_leo {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        .principal {
+            grid-column-start: 4;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+        }
+
+        footer {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #000000;
+            color: white;
+            text-align: center;
+
+        }
+        .card {
+            display: flex;
+            flex-flow: column;
+
+        }
+
+        ul {
+            list-style-type: none;
+            color: #506E6A;
+        }
+
+        a,
+        a:link {
+            text-decoration: none;
+            padding: 8px 16px;
+            border: solid #506E6A 1px;
+        }
+
+        li {
+            float: left;
+        }
+
+        a:hover {
+            background-color: #506E6A;
+            color: white;
+        }
+
+        .img {
+            border: 1px solid #ccc;
+            border-radius: 1rem;
+            padding: 0.8rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .img img {
+            width: 125px;
+            height: 115px;
+        }
+
+        @media all and (min-width: 35rem) {
+            body {
+                margin: 0 auto;
+            }
+
+            /*.container {
+                max-width: 1200px;
+                margin: 0 auto;
+
+            }*/
+
+            .img {
+                max-width: 28rem;
+                margin: 1rem;
+            }
+        }
+
+        /* media query para dispositivos móveis */
+        @media only screen and (max-width: 767px) {
+            .wrapper {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+
+            .imagem_leo {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+
+            .principal {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container">
+        <h1 style="color: white; text-align: center;">Biografia Steve Jobs</h1>
+        <br>
+    </header>
+    <nav class="container menu">
+        <ul>
+           <li><a href="steveJobs.html">Biografia</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+        </ul>
+    </nav>
+    <div class="container wrapper">
+        <aside class="imagem_jobs">
+            <img src="/imagens/steveJobs.jpg">
+            <div class="infos">
+                <p><strong>Ocupação</strong> Empreendedor</p>
+                <p>
+                    <strong>Data do Nascimento</strong>
+                    24/02/1955
+                </p>
+                <p><strong>Data da Morte</strong> 05/10/2011 (aos 56 anos)</p>
+            </div>
+
+        </aside>
+        <section class=" principal">
+            <h1>
+                Obras
+            </h1>
+            <div class="card">
+                <div class="img">
+                    <img src="/imagens/macintosh.jpg">
+
+                    <div class="">
+                        <h2>Macintosh (1984)</h2>
+                        <p>O Macintosh foi um marco por ser o primeiro computador pessoal a popularizar a interface gráfica do usuário (GUI) e o mouse. Antes dele, a maioria dos computadores era operada por comandos de texto. O Mac tornou a computação mais intuitiva e acessível para o público em geral, influenciando o design de quase todos os sistemas operacionais que vieram depois.</p>
+
+                    </div>
+                </div>
+
+                <div class="img">
+                    <img src="/imagens/ipod.jpg">
+
+                    <div class="">
+                        <h2>iPod (2001)</h2>
+                        <p>O iPod revolucionou a indústria musical. Ele não foi o primeiro tocador de MP3, mas foi o primeiro a combinar um design elegante e minimalista, uma interface de usuário simples e a loja de música online iTunes. Com o slogan "1.000 músicas no seu bolso", ele mudou a forma como as pessoas consumiam música, tornando-a portátil e digital.</p>
+                    </div>
+                </div>
+                <div class="img">
+                    <img src="/imagens/iphone.jpg">
+
+                    <div class="">
+                        <h2>iPhone (2007)</h2>
+                        <p>O iPhone é, sem dúvida, o produto mais impactante de Jobs. Ele não apenas reinventou o telefone celular, mas também criou o mercado de smartphones modernos. O dispositivo combinou um iPod, um telefone e um navegador de internet em um só aparelho com uma tela multitoque revolucionária. O iPhone estabeleceu o padrão para o design e a funcionalidade de smartphones, dando início à era dos aplicativos e mudando a forma como nos comunicamos e vivemos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="container">
+        <h1> Desenvolvido para fins educacionais</h1>
+    </footer>
+    </footer>
+    </div>
+</body>
+
+</html>

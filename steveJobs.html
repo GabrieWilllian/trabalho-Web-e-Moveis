@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steve Jobs</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #F5F5F7;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        .container {
+            display: grid;
+        }
+
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #000000;
+        }
+
+        .menu {
+            grid-column-start: 6;
+            grid-column-end: 12;
+            justify-content: center;/*centraliza o menu*/
+            gap: 20px;/*https://nekocalc.com/px-to-rem-converter*/
+        }
+
+
+        .imagem_jobs {
+            grid-column-start: 1;
+            grid-column-end: 3;
+
+        }
+
+        .principal {
+            grid-column-start: 4;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+
+        }
+
+        p{
+            color: #333333;
+        }
+
+        footer {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color:#000000;
+            color: white;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            color: #506E6A;
+        }
+
+        a,
+        a:link {
+            text-decoration: none;
+            padding: 8px 16px;
+            border: solid #506E6A 1px;
+        }
+
+        li {
+            float: left;
+        }
+
+        a:hover {
+            background-color: #506E6A;
+            color: white;
+        }
+
+        /* media query para dispositivos móveis */
+        @media only screen and (max-width: 767px) {
+            .wrapper {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+
+            .imagem_leo {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+
+            .principal {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container">
+        <h1 style="color: white; text-align: center;">Biografia Steve Jobs</h1>
+        <br>
+
+    </header>
+    <nav class="container menu">
+        <ul>
+            <li><a href="steveJobs.html">Biografia</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+        </ul>
+    </nav>
+    <div class="container wrapper">
+        <aside class="imagem_jobs">
+            <img src="/imagens/steveJobs.jpg">
+            <div class="infos">
+                <p><strong>Ocupação</strong> Empreendedor</p>
+                <p>
+                    <strong>Data do Nascimento</strong>
+                    24/02/1955
+                </p>
+                <p><strong>Data da Morte</strong> 05/10/2011 (aos 56 anos)</p>
+            </div>
+
+        </aside>
+        <section class="principal">
+            <h1>
+                Steve Jobs
+            </h1>
+            <p>Stephen Paul Jobs (1955-2011) foi um empresário, inventor e magnata americano que cofundou a Apple Inc. Ele é amplamente reconhecido como uma figura pioneira na revolução da computação pessoal, junto com seu parceiro de negócios, Steve Wozniak.
+            </p>
+            <h2>Início da vida ia fundação da Apple</h2>
+            <p>
+            Nascido em 24 de fevereiro de 1955 em São Francisco, Califórnia, Jobs foi adotado por Paul e Clara Jobs. Desde cedo, ele demonstrou interesse em eletrônica e engenharia. Após passar um semestre na Reed College em Portland, Oregon, ele abandonou os estudos, mas continuou a frequentar aulas avulsas, incluindo uma sobre caligrafia, que mais tarde influenciaria o design das fontes do Macintosh.
+            <br>
+            <br>
+            Em 1976, Jobs, Wozniak e Ronald Wayne fundaram a Apple Computer Company na garagem da família Jobs. O primeiro produto, o Apple I, era um computador pessoal voltado para entusiastas. O sucesso veio com o Apple II em 1977, um dos primeiros computadores pessoais produzidos em massa, que se tornou um sucesso de vendas.
+            </p>
+            <h2>A ascensão e queda da Apple</h2>
+            <p>
+            A empresa cresceu exponencialmente, e em 1984, Jobs lançou o Macintosh, o primeiro computador pessoal com interface gráfica de usuário e mouse, uma inovação revolucionária na época. No entanto, sua personalidade intensa e a disputa de poder com o CEO da Apple, John Sculley, levaram à sua saída da empresa em 1985.
+            </p>
+        </section>
+    </div>
+    <footer class="container">
+        <h1>Desenvolvido para fins educacionais</h1>
+    </footer>
+    </div>
+</body>
+
+</html>
