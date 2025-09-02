@@ -1,0 +1,178 @@
+/*
+Limpar formatação
+*/
+*{
+    margin:0 ;
+    padding: 0 ;
+}
+
+/*
+*****FORMATAÇÃO GENÉRICAS*****
+*/
+body{
+    font-size: 16px;
+    /*estou dando uma lista de fonte que quero que sejam aplicadas elas tem uma ordem de prioridade que vai da esquerda para direita*/
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #c4c4c4;
+}
+
+h1{
+    color: #252525;
+    font-size: 40px;
+}
+
+h2{
+    color: #0066cc;
+}
+
+h3{
+    color: #565656;
+    background: #cccccc;
+    padding: 5px;
+}
+
+/*
+*****HEADER (esse id = header)*****
+*/
+
+#header{
+    /*Aplica uma cor de fundo*/
+    background-color: #0066cc;
+    /*Aplica um espaçamento de 15px como só forneci um número ele aplica nas 4 direções*/
+    padding: 15px;
+    /*Alinha o texto no centro da tela*/
+    text-align: center;
+}
+
+/*header 2 fui eu quem criou*/
+#header2{
+    /*Aplica uma cor de fundo*/
+    background-color: #03cc00;
+    /*Aplica um espaçamento de 15px como só forneci um número ele aplica nas 4 direções*/
+    padding: 15px;
+    /*Alinha o texto no centro da tela*/
+    text-align: center;
+}
+
+/*É possivel agrupar mais de uma id e aplicar a mesma formatação de forma simultanea*/
+#logo, #menu{
+    padding: 10px;
+}
+
+/*
+#id a:link é referente ao link antes dele ser clicado
+#id a:visited é referente quando já clicaram no link
+*/
+#header a:link, #header a:visited{
+    color: #ffffff;
+    padding: 8px 12px;
+}
+
+/*
+#id a:hover difine o comportamento quando o mouse passa por do link
+*/
+#header a:hover{
+    color: #0066cc;
+    background: #ffffff;
+    text-decoration: none;
+}
+
+/*
+. nomedaclass serve para aplicar o css em classes igual o # nomedoid é usado para definir css em uma id
+*/
+.white{
+    color: #ffffff;
+}
+
+/*
+*****CONTENT*****
+*/
+
+#content{
+    /*width está dizendo a largura máxima*/
+    width: 920px;
+    /*estou dizendo que não vai ter margem em cima e embaixo e que esquerda e direita o navegador vai usar todo o espaço dispónivel*/
+    margin: 0 auto;
+    padding: 15px;
+}
+
+#posts{
+    width: 660px;
+    /*estou dizendo que quero os post flutuando(float) a esquerda(left) da minha página*/  
+    float: left;
+}
+
+.post{
+    padding: 20px;
+    /*o post vai ter uma margem inferior que distancia um do outro de 20 px*/
+    margin-bottom: 20px;
+    background: #ffffff;
+    text-align: justify;
+}
+
+.data-post{
+    font-size: 13px;
+    /*solid é o tipo da linha ela poderia ser pontilhada, trasejada, ...*/
+    border-bottom: 1px solid #0066cc;
+    padding: 10px;
+    margin-bottom: 10px;
+    /*faz o comportamento ser em bloco*/ 
+    display: block;
+}
+
+.img-post{
+    width: 620px;
+}
+/*
+*****RIGHT SIDE*****
+*/
+#right-side{
+    width: 240px;
+    float: right;
+}
+
+.content-right{
+    background: #ffffff;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.post-right{
+    font-size: 13px;
+    padding: 5px;
+    border-bottom: 1px dotted #cccccc;
+}
+
+/*
+*****FORMATEÇÃO LINEAR*****
+*/
+
+*{
+    text-decoration: none;
+}
+
+a:link, a:visited{
+    color: #0066cc;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/*
+*****FOOTER*****
+*/
+
+#footer{
+    clear: both;
+    text-align: center;
+    padding: 15px;
+    background: #ffffff;
+    color: #0066cc;
+}
+
+.card {
+    display: flex;
+    flex-flow: column;
+ }
+
